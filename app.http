@@ -1,0 +1,31 @@
+### Get all movies
+GET http://localhost:3000/districts/1/details/
+
+### Add a new movie
+POST http://localhost:3000/districts/
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+### Update a movie
+PUT http://localhost:3000/districts/3/
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+### Delete a movie
+DELETE http://localhost:3000/districts/3/
